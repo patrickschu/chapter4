@@ -117,7 +117,7 @@ catdict={
 ("feature comment", "f"): []
 }
                     
-for item in women:
+for item in commie:
 	print item
 	cat= raw_input("put me in a category: ")
 	for entry in catdict:
@@ -127,7 +127,7 @@ for item in women:
 
 	
 
-with codecs.open("womencats", "w", "utf-8") as jsonout:
+with codecs.open("commentcats", "w", "utf-8") as jsonout:
 	json.dump({k[0]:v for k,v in catdict.items()}, jsonout)
 
 df.to_csv("outi.csv", na_rep= "XXXXX")
