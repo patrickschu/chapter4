@@ -2,9 +2,12 @@ import pandas
 import codecs
 import re
 import json
-
-
-
+import string
+from collections import defaultdict
+from nltk.corpus import stopwords
+stopwords = stopwords.words('english')
+modifiers= [('more','+'), ('not', '-'), ('less', '-')]
+stopwords = [ i for i in stopwords if not i in [i[0] for i in modifiers]]
 
 #let's establish gender stereotypes
 
@@ -117,22 +120,54 @@ catdict={
 ("feature comment", "f"): []
 }
                     
-for item in commie:
-	print item
-	cat= raw_input("put me in a category: ")
-	for entry in catdict:
-		if entry[0].startswith(cat):
-			catdict[entry].append(item)
-			print item, "added to ", entry
+def categorizer(input_list, file_name):
+	"""
+	put comments in categories, write to json
+	"""
+	for item in commie:
+		print item
+		cat= raw_input("put me in a category: ")
+		for entry in catdict:
+			if entry[0].startswith(cat):
+				catdict[entry].append(item)
+				print item, "added to ", entry
+	with codecs.open(file_name, "w", "utf-8") as jsonout:
+		json.dump({k[0]:v for k,v in catdict.items()}, jsonout)
 
+jsons=[
+'/Users/ps22344/Downloads/chapter4/jsonfiles/commentcats.json',
+'/Users/ps22344/Downloads/chapter4/jsonfiles/mencats.json',
+'/Users/ps22344/Downloads/chapter4/jsonfiles/womencats.json'
+]
+
+def extracter(json_file, entry_list):
+	"""
+	take only entries included in entry_list
+	"""
+	with codecs.open(json_file, "r", "utf-8") as inputjson:
+		dicti= json.load(inputjson)
+	print "keys included", dicti.keys()
+	outputdicti= {k:v for k,v in dicti.items() if k in entry_list}
+	return outputdicti
+		
+mendict= extracter(jsons[2], [u'picks up on previous questions', u'attribute', u'feature comment', u'behavior'])
+
+menlist= [v for k,v in mendict.items()]
+menlist = [val for sublist in menlist for val in sublist]
+print menlist
+sortedmen= sorted(menlist, key=kay)
+dicti=defaultdict(list)
+for item in sortedmen:
+	sent= [ i.strip(string.punctuation) for i in item.split(' ') if not i in stopwords and not i in string.punctuation]
+	for m in [i for i in modifiers]:#[ if i[1] == '-']:
+		if m[0] in sent:
+			sent=[ i+m[1] for i in sent if m[0] in sent]
+			print sent
+	for s in sent:
+		dicti[s.lower()].append(s)
+		
+		
+for item in [(i, dicti[i], len(dicti[i])) for i in sorted(dicti, key=lambda x: len(dicti[x]), reverse=True)]:
+	print item
 	
 
-with codecs.open("commentcats", "w", "utf-8") as jsonout:
-	json.dump({k[0]:v for k,v in catdict.items()}, jsonout)
-
-df.to_csv("outi.csv", na_rep= "XXXXX")
-
-
-
-#df = df.drop(badcols, axis=1)
-#print df.iloc[2,:]
