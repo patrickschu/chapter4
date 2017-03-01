@@ -7,7 +7,7 @@ from collections import defaultdict
 from nltk.corpus import stopwords
 stopwords = stopwords.words('english')
 modifiers= [('more','+'), ('not', '-'), ('less', '-')]
-stopwords = [ i for i in stopwords if not i in [i[0] for i in modifiers]]
+stopwords = [ i for i in stopwords if not i in [i[0] for i in modifiers]]+['to', 'a', 'and', 'for', 'in', 'with', 'this', 'of', 'the']
 
 #let's establish gender stereotypes
 
@@ -154,20 +154,29 @@ mendict= extracter(jsons[2], [u'picks up on previous questions', u'attribute', u
 
 menlist= [v for k,v in mendict.items()]
 menlist = [val for sublist in menlist for val in sublist]
-print menlist
 sortedmen= sorted(menlist, key=kay)
 dicti=defaultdict(list)
 for item in sortedmen:
 	sent= [ i.strip(string.punctuation) for i in item.split(' ') if not i in stopwords and not i in string.punctuation]
-	for m in [i for i in modifiers]:#[ if i[1] == '-']:
+	for m in [i for i in modifiers]:
 		if m[0] in sent:
-			sent=[ i+m[1] for i in sent if m[0] in sent]
+			indexi= [(i,x) for i,x in enumerate(sent)]
+			indexes= [x[0] for x in indexi if x[1]==m[0]]
+			#print "indi", indexes
+			for ind in indexes:
+				rangi= range(ind+1, ind+3)
+				#print "ragni", rangi
+				for ran in rangi:
+					if all((ran < len(sent) , ind+ran > 0)):
+						sent[ran]=sent[ran]+m[1]
 			print sent
 	for s in sent:
-		dicti[s.lower()].append(s)
+		dicti[s.strip(('-+')).lower()].append(s)
 		
-		
-for item in [(i, dicti[i], len(dicti[i])) for i in sorted(dicti, key=lambda x: len(dicti[x]), reverse=True)]:
-	print item
-	
+print "\n++++\n"		
+with codecs.open('comments.txt', 'w', 'utf-8') as outi:
+	for item in [(i, ",".join(dicti[i]), str(len(dicti[i]))) for i in sorted(dicti, key=lambda x: len(dicti[x]), reverse=True)]:
+		if item[0] not in [i[0] for i in modifiers]:
+			outi.write("\t".join(item)+"\n")
+# 	
 
