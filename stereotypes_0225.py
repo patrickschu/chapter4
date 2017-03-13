@@ -8,7 +8,7 @@ from nltk.corpus import stopwords
 stopwords = stopwords.words('english')
 modifiers= [('more','+'), ('not', '-'), ('less', '-')]
 stopwords = [ i for i in stopwords if not i in [i[0] for i in modifiers]]+['to', 'a', 'and', 'for', 'in', 'with', 'this', 'of', 'the']
-
+print stopwords
 #let's establish gender stereotypes
 
 files=[
@@ -119,7 +119,16 @@ catdict={
 ("trash", "t"): [],
 ("feature comment", "f"): []
 }
-                    
+      
+
+jsons=[
+'/Users/ps22344/Downloads/chapter4/jsonfiles/commentcats.json',
+'/Users/ps22344/Downloads/chapter4/jsonfiles/mencats.json',
+'/Users/ps22344/Downloads/chapter4/jsonfiles/womencats.json'
+]
+
+
+              
 def categorizer(input_list, file_name):
 	"""
 	put comments in categories, write to json
@@ -134,11 +143,6 @@ def categorizer(input_list, file_name):
 	with codecs.open(file_name, "w", "utf-8") as jsonout:
 		json.dump({k[0]:v for k,v in catdict.items()}, jsonout)
 
-jsons=[
-'/Users/ps22344/Downloads/chapter4/jsonfiles/commentcats.json',
-'/Users/ps22344/Downloads/chapter4/jsonfiles/mencats.json',
-'/Users/ps22344/Downloads/chapter4/jsonfiles/womencats.json'
-]
 
 def extracter(json_file, entry_list):
 	"""
@@ -154,8 +158,11 @@ mendict= extracter(jsons[2], [ u'behavior'])
 
 menlist= [v for k,v in mendict.items()]
 menlist = [val for sublist in menlist for val in sublist]
+
+
 sortedmen= sorted(menlist, key=kay)
 dicti=defaultdict(list)
+
 for item in sortedmen:
 	sent= [ i.strip(string.punctuation) for i in item.split(' ') if not i in stopwords and not i in string.punctuation]
  	if 'nice' in [i.lower() for i in sent]:
@@ -176,9 +183,22 @@ for item in sortedmen:
 		dicti[s.strip(('-+')).lower()].append(s)
 		
 print "\n++++\n"		
-with codecs.open('comments.txt', 'w', 'utf-8') as outi:
+with codecs.open('comments2.txt', 'w', 'utf-8') as outi:
 	for item in [(i, ",".join(dicti[i]), str(len(dicti[i]))) for i in sorted(dicti, key=lambda x: len(dicti[x]), reverse=True)]:
 		if item[0] not in [i[0] for i in modifiers]:
 			outi.write("\t".join(item)+"\n")
 # 	
+
+#ESTABLISH TOTAL NUMBER OF WORDS PER CAT
+for json_file in jsons:
+	print json_file
+	with codecs.open(json_file, "r", "utf-8") as inputjson:
+		dicti= json.load(inputjson)
+	print "dicti", len(dicti), len(dicti.values())
+	ns= len([i for i in [val for sublist in dicti.values() for val in sublist]])
+	#print [([x for x in i.split(" ") if not x in stopwords and not x in string.punctuation], len([x for x in i.split(" ") if not x in stopwords and not x in string.punctuation])) for i in [val for sublist in dicti.values() for val in sublist]]
+	length= sum([len([x for x in i.split(" ") if not x in stopwords and not x in string.punctuation]) for i in [val for sublist in dicti.values() for val in sublist]])
+	#print [[x for x in i.split(" ") if not x in stopwords and not x in string.punctuation] for i in [val for sublist in dicti.values() for val in sublist]]
+	print "comments", ns
+	print "words", length
 
