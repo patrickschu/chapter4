@@ -1,0 +1,142 @@
+
++++working on
+ author_genderCall:
+   aov(formula = modi)
+
+Terms:
+                fullspread[["stimulus"]] Residuals
+Sum of Squares                   3.87946 217.91829
+Deg. of Freedom                        6       883
+
+Residual standard error: 0.4967827
+Estimated effects may be unbalanced
+1 observation deleted due to missingness
+
++++working on
+ author_orientCall:
+   aov(formula = modi)
+
+Terms:
+                fullspread[["stimulus"]] Residuals
+Sum of Squares                   0.69836  56.11132
+Deg. of Freedom                        6       881
+
+Residual standard error: 0.2523697
+Estimated effects may be unbalanced
+3 observations deleted due to missingness
+
++++working on
+ author_audienceCall:
+   aov(formula = modi)
+
+Terms:
+                fullspread[["stimulus"]] Residuals
+Sum of Squares                   2.85781 216.86178
+Deg. of Freedom                        6       881
+
+Residual standard error: 0.4961392
+Estimated effects may be unbalanced
+3 observations deleted due to missingness
+
++++working on
+ catCall:
+   aov(formula = modi)
+
+Terms:
+                fullspread[["stimulus"]] Residuals
+Sum of Squares                   20.6414  999.3541
+Deg. of Freedom                        6       881
+
+Residual standard error: 1.065054
+Estimated effects may be unbalanced
+3 observations deleted due to missingness
+
++++working on
+ author_assertiveCall:
+   aov(formula = modi)
+
+Terms:
+                fullspread[["stimulus"]] Residuals
+Sum of Squares                    8.5422  632.5690
+Deg. of Freedom                        6       883
+
+Residual standard error: 0.846396
+Estimated effects may be unbalanced
+1 observation deleted due to missingness
+
++++working on
+ author_educationCall:
+   aov(formula = modi)
+
+Terms:
+                fullspread[["stimulus"]] Residuals
+Sum of Squares                   16.3529  427.4509
+Deg. of Freedom                        6       783
+
+Residual standard error: 0.7388602
+Estimated effects may be unbalanced
+101 observations deleted due to missingness
+
++++working on
+ author_friendlyCall:
+   aov(formula = modi)
+
+Terms:
+                fullspread[["stimulus"]] Residuals
+Sum of Squares                    5.0850  386.0081
+Deg. of Freedom                        6       884
+
+Residual standard error: 0.6608031
+Estimated effects may be unbalanced
+
++++working on
+ author_sensitiveCall:
+   aov(formula = modi)
+
+Terms:
+                fullspread[["stimulus"]] Residuals
+Sum of Squares                    0.8193  363.1628
+Deg. of Freedom                        6       883
+
+Residual standard error: 0.6413134
+Estimated effects may be unbalanced
+1 observation deleted due to missingness
+
++++working on
+ author_ethnicityCall:
+   aov(formula = modi)
+
+Terms:
+                fullspread[["stimulus"]] Residuals
+Sum of Squares                    1.0629  360.1730
+Deg. of Freedom                        6       883
+
+Residual standard error: 0.6386681
+Estimated effects may be unbalanced
+1 observation deleted due to missingness
+
++++working on
+ author_attractiveCall:
+   aov(formula = modi)
+
+Terms:
+                fullspread[["stimulus"]] Residuals
+Sum of Squares                    4.0166  189.3004
+Deg. of Freedom                        5       565
+
+Residual standard error: 0.5788307
+Estimated effects may be unbalanced
+320 observations deleted due to missingness
+
++++working on
+ would_you_replyCall:
+   aov(formula = modi)
+
+Terms:
+                fullspread[["stimulus"]] Residuals
+Sum of Squares                   19.5917  899.6808
+Deg. of Freedom                        6       782
+
+Residual standard error: 1.072608
+Estimated effects may be unbalanced
+102 observations deleted due to missingness

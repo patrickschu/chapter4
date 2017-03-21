@@ -1,0 +1,143 @@
+
++++working on
+ author_genderCall:
+   aov(formula = modi)
+
+Terms:
+                fullspread[["author_gender"]] Residuals
+Sum of Squares                       221.7978    0.0000
+Deg. of Freedom                             1       888
+
+Residual standard error: 1.324141e-14
+Estimated effects may be unbalanced
+1 observation deleted due to missingness
+
++++working on
+ author_orientCall:
+   aov(formula = modi)
+
+Terms:
+                fullspread[["author_gender"]] Residuals
+Sum of Squares                        1.59004  55.21492
+Deg. of Freedom                             1       885
+
+Residual standard error: 0.2497794
+Estimated effects may be unbalanced
+4 observations deleted due to missingness
+
++++working on
+ author_audienceCall:
+   aov(formula = modi)
+
+Terms:
+                fullspread[["author_gender"]] Residuals
+Sum of Squares                        2.76429 216.95531
+Deg. of Freedom                             1       886
+
+Residual standard error: 0.494844
+Estimated effects may be unbalanced
+3 observations deleted due to missingness
+
++++working on
+ catCall:
+   aov(formula = modi)
+
+Terms:
+                fullspread[["author_gender"]] Residuals
+Sum of Squares                       803.0402  216.9553
+Deg. of Freedom                             1       886
+
+Residual standard error: 0.494844
+Estimated effects may be unbalanced
+3 observations deleted due to missingness
+
++++working on
+ author_assertiveCall:
+   aov(formula = modi)
+
+Terms:
+                fullspread[["author_gender"]] Residuals
+Sum of Squares                         0.0928  640.9578
+Deg. of Freedom                             1       887
+
+Residual standard error: 0.8500665
+Estimated effects may be unbalanced
+2 observations deleted due to missingness
+
++++working on
+ author_educationCall:
+   aov(formula = modi)
+
+Terms:
+                fullspread[["author_gender"]] Residuals
+Sum of Squares                         0.4543  441.7612
+Deg. of Freedom                             1       787
+
+Residual standard error: 0.7492149
+Estimated effects may be unbalanced
+102 observations deleted due to missingness
+
++++working on
+ author_friendlyCall:
+   aov(formula = modi)
+
+Terms:
+                fullspread[["author_gender"]] Residuals
+Sum of Squares                         9.0027  380.9523
+Deg. of Freedom                             1       888
+
+Residual standard error: 0.6549812
+Estimated effects may be unbalanced
+1 observation deleted due to missingness
+
++++working on
+ author_sensitiveCall:
+   aov(formula = modi)
+
+Terms:
+                fullspread[["author_gender"]] Residuals
+Sum of Squares                         3.0496  360.8942
+Deg. of Freedom                             1       887
+
+Residual standard error: 0.6378641
+Estimated effects may be unbalanced
+2 observations deleted due to missingness
+
++++working on
+ author_ethnicityCall:
+   aov(formula = modi)
+
+Terms:
+                fullspread[["author_gender"]] Residuals
+Sum of Squares                         1.3684  359.8352
+Deg. of Freedom                             1       887
+
+Residual standard error: 0.6369275
+Estimated effects may be unbalanced
+2 observations deleted due to missingness
+
++++working on
+ author_attractiveCall:
+   aov(formula = modi)
+
+Terms:
+                fullspread[["author_gender"]] Residuals
+Sum of Squares                         8.1714  185.1426
+Deg. of Freedom                             1       568
+
+Residual standard error: 0.570925
+Estimated effects may be unbalanced
+321 observations deleted due to missingness
+
++++working on
+ would_you_replyCall:
+   aov(formula = modi)
+
+Terms:
+                fullspread[["author_gender"]] Residuals
+Sum of Squares                        26.7530  892.5195
+Deg. of Freedom                             1       787
+
+Residual standard error: 1.064931
+Estimated effects may be unbalanced
+102 observations deleted due to missingness

@@ -1,0 +1,319 @@
+
++++working on
+ author_gender
+Call:
+glm(formula = as.numeric(fullspread[[p]]) ~ fullspread[["author_gender"]])
+
+Deviance Residuals: 
+       Min          1Q      Median          3Q         Max  
+-1.887e-14  -1.887e-14  -2.220e-15  -2.220e-15  -2.220e-15  
+
+Coefficients:
+                                   Estimate Std. Error   t value
+(Intercept)                       1.000e+00  6.382e-16 1.567e+15
+fullspread[["author_gender"]]male 1.000e+00  8.783e-16 1.139e+15
+                                  Pr(>|t|)    
+(Intercept)                         <2e-16 ***
+fullspread[["author_gender"]]male   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for gaussian family taken to be 1.71092e-28)
+
+    Null deviance: 2.2180e+02  on 889  degrees of freedom
+Residual deviance: 1.5193e-25  on 888  degrees of freedom
+  (1 observation deleted due to missingness)
+AIC: -54373
+
+Number of Fisher Scoring iterations: 1
+
+
++++working on
+ author_orient
+Call:
+glm(formula = as.numeric(fullspread[[p]]) ~ fullspread[["author_gender"]])
+
+Deviance Residuals: 
+     Min        1Q    Median        3Q       Max  
+-0.10874  -0.10874  -0.02392  -0.02392   0.97608  
+
+Coefficients:
+                                  Estimate Std. Error t value Pr(>|t|)
+(Intercept)                        1.02392    0.01222  83.811  < 2e-16
+fullspread[["author_gender"]]male  0.08482    0.01680   5.048 5.41e-07
+                                     
+(Intercept)                       ***
+fullspread[["author_gender"]]male ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for gaussian family taken to be 0.06238974)
+
+    Null deviance: 56.805  on 886  degrees of freedom
+Residual deviance: 55.215  on 885  degrees of freedom
+  (4 observations deleted due to missingness)
+AIC: 60.342
+
+Number of Fisher Scoring iterations: 2
+
+
++++working on
+ author_audience
+Call:
+glm(formula = as.numeric(fullspread[[p]]) ~ fullspread[["author_gender"]])
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-0.5083  -0.3966  -0.3966   0.4916   0.6034  
+
+Coefficients:
+                                  Estimate Std. Error t value Pr(>|t|)
+(Intercept)                        1.50835    0.02417   62.39  < 2e-16
+fullspread[["author_gender"]]male -0.11176    0.03326   -3.36 0.000813
+                                     
+(Intercept)                       ***
+fullspread[["author_gender"]]male ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for gaussian family taken to be 0.2448705)
+
+    Null deviance: 219.72  on 887  degrees of freedom
+Residual deviance: 216.96  on 886  degrees of freedom
+  (3 observations deleted due to missingness)
+AIC: 1274.6
+
+Number of Fisher Scoring iterations: 2
+
+
++++working on
+ cat
+Call:
+glm(formula = as.numeric(fullspread[[p]]) ~ fullspread[["author_gender"]])
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-0.6034  -0.5083   0.3966   0.3966   0.4916  
+
+Coefficients:
+                                  Estimate Std. Error t value Pr(>|t|)
+(Intercept)                        3.50835    0.02417  145.12   <2e-16
+fullspread[["author_gender"]]male -1.90494    0.03326  -57.27   <2e-16
+                                     
+(Intercept)                       ***
+fullspread[["author_gender"]]male ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for gaussian family taken to be 0.2448705)
+
+    Null deviance: 1020.00  on 887  degrees of freedom
+Residual deviance:  216.96  on 886  degrees of freedom
+  (3 observations deleted due to missingness)
+AIC: 1274.6
+
+Number of Fisher Scoring iterations: 2
+
+
++++working on
+ author_assertive
+Call:
+glm(formula = as.numeric(fullspread[[p]]) ~ fullspread[["author_gender"]])
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.7633  -0.7429   0.2367   0.2571   2.2571  
+
+Coefficients:
+                                  Estimate Std. Error t value Pr(>|t|)
+(Intercept)                        2.74286    0.04148  66.126   <2e-16
+fullspread[["author_gender"]]male  0.02047    0.05711   0.358     0.72
+                                     
+(Intercept)                       ***
+fullspread[["author_gender"]]male    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for gaussian family taken to be 0.7226131)
+
+    Null deviance: 641.05  on 888  degrees of freedom
+Residual deviance: 640.96  on 887  degrees of freedom
+  (2 observations deleted due to missingness)
+AIC: 2238.1
+
+Number of Fisher Scoring iterations: 2
+
+
++++working on
+ author_education
+Call:
+glm(formula = as.numeric(fullspread[[p]]) ~ fullspread[["author_gender"]])
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.7612  -0.7131   0.2388   0.2869   2.2869  
+
+Coefficients:
+                                  Estimate Std. Error t value Pr(>|t|)
+(Intercept)                        2.71311    0.03916   69.28   <2e-16
+fullspread[["author_gender"]]male  0.04811    0.05349    0.90    0.369
+                                     
+(Intercept)                       ***
+fullspread[["author_gender"]]male    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for gaussian family taken to be 0.561323)
+
+    Null deviance: 442.22  on 788  degrees of freedom
+Residual deviance: 441.76  on 787  degrees of freedom
+  (102 observations deleted due to missingness)
+AIC: 1787.5
+
+Number of Fisher Scoring iterations: 2
+
+
++++working on
+ author_friendly
+Call:
+glm(formula = as.numeric(fullspread[[p]]) ~ fullspread[["author_gender"]])
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.0277  -0.0277  -0.0277   0.1738   3.1738  
+
+Coefficients:
+                                  Estimate Std. Error t value Pr(>|t|)
+(Intercept)                        1.82619    0.03196  57.140  < 2e-16
+fullspread[["author_gender"]]male  0.20147    0.04398   4.581 5.29e-06
+                                     
+(Intercept)                       ***
+fullspread[["author_gender"]]male ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for gaussian family taken to be 0.4290004)
+
+    Null deviance: 389.96  on 889  degrees of freedom
+Residual deviance: 380.95  on 888  degrees of freedom
+  (1 observation deleted due to missingness)
+AIC: 1776.5
+
+Number of Fisher Scoring iterations: 2
+
+
++++working on
+ author_sensitive
+Call:
+glm(formula = as.numeric(fullspread[[p]]) ~ fullspread[["author_gender"]])
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.8596  -0.7422   0.1404   0.2578   2.2578  
+
+Coefficients:
+                                  Estimate Std. Error t value Pr(>|t|)
+(Intercept)                        2.74224    0.03116  88.000  < 2e-16
+fullspread[["author_gender"]]male  0.11733    0.04286   2.738  0.00631
+                                     
+(Intercept)                       ***
+fullspread[["author_gender"]]male ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for gaussian family taken to be 0.4068706)
+
+    Null deviance: 363.94  on 888  degrees of freedom
+Residual deviance: 360.89  on 887  degrees of freedom
+  (2 observations deleted due to missingness)
+AIC: 1727.4
+
+Number of Fisher Scoring iterations: 2
+
+
++++working on
+ author_ethnicity
+Call:
+glm(formula = as.numeric(fullspread[[p]]) ~ fullspread[["author_gender"]])
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-2.8616   0.1384   0.1384   0.2170   0.2170  
+
+Coefficients:
+                                  Estimate Std. Error t value Pr(>|t|)
+(Intercept)                        3.86158    0.03112 124.103   <2e-16
+fullspread[["author_gender"]]male -0.07860    0.04279  -1.837   0.0666
+                                     
+(Intercept)                       ***
+fullspread[["author_gender"]]male .  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for gaussian family taken to be 0.4056767)
+
+    Null deviance: 361.20  on 888  degrees of freedom
+Residual deviance: 359.84  on 887  degrees of freedom
+  (2 observations deleted due to missingness)
+AIC: 1724.8
+
+Number of Fisher Scoring iterations: 2
+
+
++++working on
+ author_attractive
+Call:
+glm(formula = as.numeric(fullspread[[p]]) ~ fullspread[["author_gender"]])
+
+Deviance Residuals: 
+     Min        1Q    Median        3Q       Max  
+-1.06081  -0.06081  -0.06081   0.17883   1.17883  
+
+Coefficients:
+                                  Estimate Std. Error t value Pr(>|t|)
+(Intercept)                        2.82117    0.03449  81.795  < 2e-16
+fullspread[["author_gender"]]male  0.23964    0.04786   5.007 7.39e-07
+                                     
+(Intercept)                       ***
+fullspread[["author_gender"]]male ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for gaussian family taken to be 0.3259553)
+
+    Null deviance: 193.31  on 569  degrees of freedom
+Residual deviance: 185.14  on 568  degrees of freedom
+  (321 observations deleted due to missingness)
+AIC: 982.62
+
+Number of Fisher Scoring iterations: 2
+
+
++++working on
+ would_you_reply
+Call:
+glm(formula = as.numeric(fullspread[[p]]) ~ fullspread[["author_gender"]])
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-3.0543  -0.6849   0.3151   0.9457   1.3151  
+
+Coefficients:
+                                  Estimate Std. Error t value Pr(>|t|)
+(Intercept)                        3.68493    0.05574  66.108  < 2e-16
+fullspread[["author_gender"]]male  0.36931    0.07604   4.857 1.44e-06
+                                     
+(Intercept)                       ***
+fullspread[["author_gender"]]male ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for gaussian family taken to be 1.134078)
+
+    Null deviance: 919.27  on 788  degrees of freedom
+Residual deviance: 892.52  on 787  degrees of freedom
+  (102 observations deleted due to missingness)
+AIC: 2342.4
+
+Number of Fisher Scoring iterations: 2
+
