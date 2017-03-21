@@ -73,7 +73,7 @@ fullspread=spreadsheetbuilder(files)
 
 
 #are features emoticon, prosody, perceived as attractive by target population?
-
+sink("feature_values_0312.txt")
 for (st in levels(fullspread[['stimulus']])){
 	temp= fullspread[fullspread[['stimulus']] == st,]
 	#temp= temp[,perceptionfeatures]
@@ -91,5 +91,6 @@ for (st in levels(fullspread[['stimulus']])){
 	lapply(temp[,perceptionfeatures], function(x) print(names(temp)[sapply(temp, function(i) identical(i,x))]))
 	lapply(temp[,perceptionfeatures], function(x) {print(names(temp)[sapply(temp, function(i) identical(i,x))]);tryCatch(print(t.test (as.numeric(x) ~ temp[['author_gender']])), error=function(e) print(e))})
 }
+sink()
 #are features rated the same on education, etc, no matter what the gender score?
 
