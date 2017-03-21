@@ -75,11 +75,20 @@ fullspread=spreadsheetbuilder(files)
 
 for (st in levels(fullspread[['stimulus']])){
 	temp= fullspread[fullspread[['stimulus']] == st,]
-	print(colnames(temp))
+	cat ("\nworking on", st, "\n")
+	#print(colnames(temp))
 	gendered= split(temp, temp[['author_gender']])
-	print (summary(gendered$female))
-	
-}
+	print (colnames(gendered$female))
+	female= gendered$female[,perceptionfeatures]
+	womenmeans= lapply(female, function(x) names(female)[sapply(female, function(i) identical(i, x))])
+	womenmeans= lapply(female, function(x) mean(as.numeric(x), na.rm= TRUE))
+	male= gendered$male[,perceptionfeatures]
+	menmeans= lapply(male, function(x) mean(as.numeric(x), na.rm= TRUE))
+	total= rbind(womenmeans, menmeans)
+	print total
+	total = Map(c, womenmeans, menmeans)
+	print total
+	}
 
-#are features rate the same on education, etc, no matter what the gender score?
+#are features rated the same on education, etc, no matter what the gender score?
 
