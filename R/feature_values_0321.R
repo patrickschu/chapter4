@@ -79,7 +79,7 @@ fullspread=rbind(menonly, womenonly)
 
 
 #are features emoticon, prosody, perceived as attractive by target population?
-sink("feature_values_0321.txt")
+#sink("feature_values_0321.txt")
 for (st in levels(fullspread[['stimulus']])){
 	temp= fullspread[fullspread[['stimulus']] == st,]
 	#temp= temp[,perceptionfeatures]
@@ -90,9 +90,11 @@ for (st in levels(fullspread[['stimulus']])){
 	womenmeans= lapply(female, function(x) mean(as.numeric(x), na.rm= TRUE))
 	menmeans= lapply(male, function(x) mean(as.numeric(x), na.rm= TRUE))
 	total= rbind(womenmeans, menmeans)
+
 	#lapply(temp[,perceptionfeatures], function(x) print(names(temp)[sapply(temp, function(i) identical(i,x))]))
+	print (total)
 	lapply(temp[,perceptionfeatures], function(x) {print(names(temp)[sapply(temp, function(i) identical(i,x))]);tryCatch(print(t.test (as.numeric(x) ~ temp[['author_gender']])), error=function(e) print(e))})
 }
-sink()
+#sink()
 #are features rated the same on education, etc, no matter what the gender score?
 
