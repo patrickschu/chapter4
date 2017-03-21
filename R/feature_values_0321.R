@@ -70,25 +70,27 @@ participantfeaturesnumeric=c(
 
 fullspread=spreadsheetbuilder(files)
 
+menonly= fullspread[fullspread[['author_gender']] == 'male'&fullspread[['author_orient']] == 'heterosexual'&fullspread[['author_audience']] == 'woman',]
+womenonly= fullspread[fullspread[['author_gender']] == 'female'&fullspread[['author_orient']] == 'heterosexual'&fullspread[['author_audience']] == 'man',]
+gaymenonly= fullspread[fullspread[['author_gender']] == 'male'&fullspread[['author_orient']] == 'homosexual'&fullspread[['author_audience']] == 'man',]
+gaywomenonly= fullspread[fullspread[['author_gender']] == 'female'&fullspread[['author_orient']] == 'homosexual'&fullspread[['author_audience']] == 'woman',]
+
+fullspread=rbind(menonly, womenonly)
 
 
 #are features emoticon, prosody, perceived as attractive by target population?
-sink("feature_values_0312.txt")
+sink("feature_values_0321.txt")
 for (st in levels(fullspread[['stimulus']])){
 	temp= fullspread[fullspread[['stimulus']] == st,]
 	#temp= temp[,perceptionfeatures]
 	cat ("\nworking on", st, "\n")
-	#print(colnames(temp))
 	gendered= split(temp, temp[['author_gender']])
 	female= gendered$female[,perceptionfeatures]
 	male= gendered$male[,perceptionfeatures]
 	womenmeans= lapply(female, function(x) mean(as.numeric(x), na.rm= TRUE))
 	menmeans= lapply(male, function(x) mean(as.numeric(x), na.rm= TRUE))
 	total= rbind(womenmeans, menmeans)
-	#for i in temp:
-	#	t.test(i[male], i[female])
-	#iterate over cols in i
-	lapply(temp[,perceptionfeatures], function(x) print(names(temp)[sapply(temp, function(i) identical(i,x))]))
+	#lapply(temp[,perceptionfeatures], function(x) print(names(temp)[sapply(temp, function(i) identical(i,x))]))
 	lapply(temp[,perceptionfeatures], function(x) {print(names(temp)[sapply(temp, function(i) identical(i,x))]);tryCatch(print(t.test (as.numeric(x) ~ temp[['author_gender']])), error=function(e) print(e))})
 }
 sink()
