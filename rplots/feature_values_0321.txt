@@ -1,0 +1,696 @@
+
+working on control 
+[1] "author_gender"
+<simpleError in t.test.default(x = c(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1), y = c(2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2)): data are essentially constant>
+[1] "author_orient"
+<simpleError in t.test.default(x = c(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1), y = c(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)): data are essentially constant>
+[1] "author_audience"
+<simpleError in t.test.default(x = c(2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2), y = c(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)): data are essentially constant>
+[1] "cat"
+<simpleError in t.test.default(x = c(4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4), y = c(2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2)): data are essentially constant>
+[1] "author_assertive"
+
+	Welch Two Sample t-test
+
+data:  as.numeric(x) by temp[["author_gender"]]
+t = 2.8438, df = 58.651, p-value = 0.006127
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ 0.1453513 0.8358315
+sample estimates:
+mean in group female   mean in group male 
+            3.032258             2.541667 
+
+[1] "author_education"
+
+	Welch Two Sample t-test
+
+data:  as.numeric(x) by temp[["author_gender"]]
+t = -1.1035, df = 47.326, p-value = 0.2754
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.6070222  0.1769147
+sample estimates:
+mean in group female   mean in group male 
+            2.451613             2.666667 
+
+[1] "author_friendly"
+
+	Welch Two Sample t-test
+
+data:  as.numeric(x) by temp[["author_gender"]]
+t = -0.87597, df = 46.982, p-value = 0.3855
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.4711564  0.1853141
+sample estimates:
+mean in group female   mean in group male 
+            1.870968             2.013889 
+
+[1] "author_sensitive"
+
+	Welch Two Sample t-test
+
+data:  as.numeric(x) by temp[["author_gender"]]
+t = -0.83901, df = 45.923, p-value = 0.4058
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.4370893  0.1799208
+sample estimates:
+mean in group female   mean in group male 
+            2.774194             2.902778 
+
+[1] "author_ethnicity"
+
+	Welch Two Sample t-test
+
+data:  as.numeric(x) by temp[["author_gender"]]
+t = -0.67845, df = 43.196, p-value = 0.5011
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.4523812  0.2246034
+sample estimates:
+mean in group female   mean in group male 
+            3.733333             3.847222 
+
+[1] "author_attractive"
+<simpleError in t.test.formula(as.numeric(x) ~ temp[["author_gender"]]): grouping factor must have exactly 2 levels>
+[1] "would_you_reply"
+
+	Welch Two Sample t-test
+
+data:  as.numeric(x) by temp[["author_gender"]]
+t = -3.8846, df = 51.355, p-value = 0.0002946
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -1.4052760 -0.4477706
+sample estimates:
+mean in group female   mean in group male 
+            3.129032             4.055556 
+
+
+working on Capitals 
+[1] "author_gender"
+<simpleError in t.test.default(x = c(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1), y = c(2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2)): data are essentially constant>
+[1] "author_orient"
+<simpleError in t.test.default(x = c(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1), y = c(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)): data are essentially constant>
+[1] "author_audience"
+<simpleError in t.test.default(x = c(2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2), y = c(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)): data are essentially constant>
+[1] "cat"
+<simpleError in t.test.default(x = c(4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4), y = c(2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2)): data are essentially constant>
+[1] "author_assertive"
+
+	Welch Two Sample t-test
+
+data:  as.numeric(x) by temp[["author_gender"]]
+t = -1.4714, df = 45.615, p-value = 0.148
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.7894301  0.1227635
+sample estimates:
+mean in group female   mean in group male 
+            2.500000             2.833333 
+
+[1] "author_education"
+
+	Welch Two Sample t-test
+
+data:  as.numeric(x) by temp[["author_gender"]]
+t = -1.0394, df = 30.953, p-value = 0.3067
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.5924651  0.1924651
+sample estimates:
+mean in group female   mean in group male 
+            2.666667             2.866667 
+
+[1] "author_friendly"
+
+	Welch Two Sample t-test
+
+data:  as.numeric(x) by temp[["author_gender"]]
+t = -1.7673, df = 45.977, p-value = 0.08382
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.57039549  0.03706215
+sample estimates:
+mean in group female   mean in group male 
+            1.833333             2.100000 
+
+[1] "author_sensitive"
+
+	Welch Two Sample t-test
+
+data:  as.numeric(x) by temp[["author_gender"]]
+t = 0.12411, df = 38.126, p-value = 0.9019
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.3402219  0.3846664
+sample estimates:
+mean in group female   mean in group male 
+            2.888889             2.866667 
+
+[1] "author_ethnicity"
+
+	Welch Two Sample t-test
+
+data:  as.numeric(x) by temp[["author_gender"]]
+t = 1.7951, df = 29, p-value = 0.08307
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.02787377  0.42787377
+sample estimates:
+mean in group female   mean in group male 
+                 4.0                  3.8 
+
+[1] "author_attractive"
+
+	Welch Two Sample t-test
+
+data:  as.numeric(x) by temp[["author_gender"]]
+t = -1.7926, df = 35.233, p-value = 0.08162
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.62087152  0.03849604
+sample estimates:
+mean in group female   mean in group male 
+            2.777778             3.068966 
+
+[1] "would_you_reply"
+
+	Welch Two Sample t-test
+
+data:  as.numeric(x) by temp[["author_gender"]]
+t = -0.63548, df = 43.395, p-value = 0.5285
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.6490822  0.3379711
+sample estimates:
+mean in group female   mean in group male 
+            3.944444             4.100000 
+
+
+working on Clippings 
+[1] "author_gender"
+<simpleError in t.test.default(x = c(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1), y = c(2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2)): data are essentially constant>
+[1] "author_orient"
+<simpleError in t.test.default(x = c(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1), y = c(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)): data are essentially constant>
+[1] "author_audience"
+<simpleError in t.test.default(x = c(2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2), y = c(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)): data are essentially constant>
+[1] "cat"
+<simpleError in t.test.default(x = c(4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4), y = c(2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2)): data are essentially constant>
+[1] "author_assertive"
+
+	Welch Two Sample t-test
+
+data:  as.numeric(x) by temp[["author_gender"]]
+t = -0.82565, df = 47.059, p-value = 0.4132
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.5727465  0.2394132
+sample estimates:
+mean in group female   mean in group male 
+            2.800000             2.966667 
+
+[1] "author_education"
+
+	Welch Two Sample t-test
+
+data:  as.numeric(x) by temp[["author_gender"]]
+t = 1.2642, df = 42.99, p-value = 0.213
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.1660778  0.7241423
+sample estimates:
+mean in group female   mean in group male 
+            3.150000             2.870968 
+
+[1] "author_friendly"
+
+	Welch Two Sample t-test
+
+data:  as.numeric(x) by temp[["author_gender"]]
+t = -0.21592, df = 47.59, p-value = 0.83
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.3327085  0.2681924
+sample estimates:
+mean in group female   mean in group male 
+            2.000000             2.032258 
+
+[1] "author_sensitive"
+
+	Welch Two Sample t-test
+
+data:  as.numeric(x) by temp[["author_gender"]]
+t = -0.12443, df = 29.002, p-value = 0.9018
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.3656144  0.3236789
+sample estimates:
+mean in group female   mean in group male 
+            2.850000             2.870968 
+
+[1] "author_ethnicity"
+
+	Welch Two Sample t-test
+
+data:  as.numeric(x) by temp[["author_gender"]]
+t = 0.20428, df = 46.732, p-value = 0.839
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.2569170  0.3149815
+sample estimates:
+mean in group female   mean in group male 
+            3.900000             3.870968 
+
+[1] "author_attractive"
+
+	Welch Two Sample t-test
+
+data:  as.numeric(x) by temp[["author_gender"]]
+t = -0.82919, df = 41.644, p-value = 0.4117
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.4618711  0.1929056
+sample estimates:
+mean in group female   mean in group male 
+            2.900000             3.034483 
+
+[1] "would_you_reply"
+
+	Welch Two Sample t-test
+
+data:  as.numeric(x) by temp[["author_gender"]]
+t = -1.3279, df = 34.322, p-value = 0.193
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -1.0405058  0.2179252
+sample estimates:
+mean in group female   mean in group male 
+             3.75000              4.16129 
+
+
+working on Prosody 
+[1] "author_gender"
+<simpleError in t.test.default(x = c(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1), y = c(2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2)): data are essentially constant>
+[1] "author_orient"
+<simpleError in t.test.default(x = c(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1), y = c(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)): data are essentially constant>
+[1] "author_audience"
+<simpleError in t.test.default(x = c(2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2), y = c(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)): data are essentially constant>
+[1] "cat"
+<simpleError in t.test.default(x = c(4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4), y = c(2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2)): data are essentially constant>
+[1] "author_assertive"
+
+	Welch Two Sample t-test
+
+data:  as.numeric(x) by temp[["author_gender"]]
+t = 0.57019, df = 52.674, p-value = 0.571
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.3315847  0.5949387
+sample estimates:
+mean in group female   mean in group male 
+            2.914286             2.782609 
+
+[1] "author_education"
+
+	Welch Two Sample t-test
+
+data:  as.numeric(x) by temp[["author_gender"]]
+t = -1.0888, df = 49.589, p-value = 0.2815
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.5725545  0.1700701
+sample estimates:
+mean in group female   mean in group male 
+            2.885714             3.086957 
+
+[1] "author_friendly"
+
+	Welch Two Sample t-test
+
+data:  as.numeric(x) by temp[["author_gender"]]
+t = -1.1556, df = 51.579, p-value = 0.2532
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.5065753  0.1363890
+sample estimates:
+mean in group female   mean in group male 
+            1.771429             1.956522 
+
+[1] "author_sensitive"
+
+	Welch Two Sample t-test
+
+data:  as.numeric(x) by temp[["author_gender"]]
+t = -2.4797, df = 50.87, p-value = 0.0165
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.72835380 -0.07661515
+sample estimates:
+mean in group female   mean in group male 
+            2.771429             3.173913 
+
+[1] "author_ethnicity"
+
+	Welch Two Sample t-test
+
+data:  as.numeric(x) by temp[["author_gender"]]
+t = 1.2076, df = 34.674, p-value = 0.2354
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.1490511  0.5863182
+sample estimates:
+mean in group female   mean in group male 
+            3.914286             3.695652 
+
+[1] "author_attractive"
+
+	Welch Two Sample t-test
+
+data:  as.numeric(x) by temp[["author_gender"]]
+t = -2.4827, df = 45.04, p-value = 0.01683
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.75149339 -0.07832028
+sample estimates:
+mean in group female   mean in group male 
+            2.628571             3.043478 
+
+[1] "would_you_reply"
+
+	Welch Two Sample t-test
+
+data:  as.numeric(x) by temp[["author_gender"]]
+t = -2.2684, df = 47.102, p-value = 0.02793
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -1.21362344 -0.07282157
+sample estimates:
+mean in group female   mean in group male 
+            3.617647             4.260870 
+
+
+working on Punctuation 
+[1] "author_gender"
+<simpleError in t.test.default(x = c(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1), y = c(2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2)): data are essentially constant>
+[1] "author_orient"
+<simpleError in t.test.default(x = c(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1), y = c(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)): data are essentially constant>
+[1] "author_audience"
+<simpleError in t.test.default(x = c(2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2), y = c(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)): data are essentially constant>
+[1] "cat"
+<simpleError in t.test.default(x = c(4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4), y = c(2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2)): data are essentially constant>
+[1] "author_assertive"
+
+	Welch Two Sample t-test
+
+data:  as.numeric(x) by temp[["author_gender"]]
+t = -0.78804, df = 37.789, p-value = 0.4356
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.6620583  0.2910906
+sample estimates:
+mean in group female   mean in group male 
+            2.750000             2.935484 
+
+[1] "author_education"
+
+	Welch Two Sample t-test
+
+data:  as.numeric(x) by temp[["author_gender"]]
+t = -1.1191, df = 47.214, p-value = 0.2688
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.6858274  0.1955048
+sample estimates:
+mean in group female   mean in group male 
+            2.400000             2.645161 
+
+[1] "author_friendly"
+
+	Welch Two Sample t-test
+
+data:  as.numeric(x) by temp[["author_gender"]]
+t = -0.70788, df = 32.639, p-value = 0.484
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.6688060  0.3236447
+sample estimates:
+mean in group female   mean in group male 
+            2.150000             2.322581 
+
+[1] "author_sensitive"
+
+	Welch Two Sample t-test
+
+data:  as.numeric(x) by temp[["author_gender"]]
+t = -0.58812, df = 40.783, p-value = 0.5597
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.5364287  0.2944932
+sample estimates:
+mean in group female   mean in group male 
+            2.750000             2.870968 
+
+[1] "author_ethnicity"
+
+	Welch Two Sample t-test
+
+data:  as.numeric(x) by temp[["author_gender"]]
+t = 0.40316, df = 48.587, p-value = 0.6886
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.2442794  0.3668600
+sample estimates:
+mean in group female   mean in group male 
+             3.90000              3.83871 
+
+[1] "author_attractive"
+
+	Welch Two Sample t-test
+
+data:  as.numeric(x) by temp[["author_gender"]]
+t = -2.3157, df = 37.443, p-value = 0.02616
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.68334001 -0.04569225
+sample estimates:
+mean in group female   mean in group male 
+            2.700000             3.064516 
+
+[1] "would_you_reply"
+
+	Welch Two Sample t-test
+
+data:  as.numeric(x) by temp[["author_gender"]]
+t = -1.17, df = 47.284, p-value = 0.2479
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.9692552  0.2563519
+sample estimates:
+mean in group female   mean in group male 
+            3.450000             3.806452 
+
+
+working on Emoticons 
+[1] "author_gender"
+<simpleError in t.test.default(x = c(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1), y = c(2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2)): data are essentially constant>
+[1] "author_orient"
+<simpleError in t.test.default(x = c(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1), y = c(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)): data are essentially constant>
+[1] "author_audience"
+<simpleError in t.test.default(x = c(2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2), y = c(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)): data are essentially constant>
+[1] "cat"
+<simpleError in t.test.default(x = c(4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4), y = c(2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2)): data are essentially constant>
+[1] "author_assertive"
+
+	Welch Two Sample t-test
+
+data:  as.numeric(x) by temp[["author_gender"]]
+t = 0.64142, df = 116, p-value = 0.5225
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.2140818  0.4191509
+sample estimates:
+mean in group female   mean in group male 
+            2.709677             2.607143 
+
+[1] "author_education"
+
+	Welch Two Sample t-test
+
+data:  as.numeric(x) by temp[["author_gender"]]
+t = 0.63693, df = 58.953, p-value = 0.5266
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.2636276  0.5098150
+sample estimates:
+mean in group female   mean in group male 
+            2.740741             2.617647 
+
+[1] "author_friendly"
+
+	Welch Two Sample t-test
+
+data:  as.numeric(x) by temp[["author_gender"]]
+t = -1.6475, df = 113.43, p-value = 0.1022
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.4110606  0.0377887
+sample estimates:
+mean in group female   mean in group male 
+            1.741935             1.928571 
+
+[1] "author_sensitive"
+
+	Welch Two Sample t-test
+
+data:  as.numeric(x) by temp[["author_gender"]]
+t = -0.84416, df = 101.44, p-value = 0.4006
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.3203177  0.1290735
+sample estimates:
+mean in group female   mean in group male 
+            2.725806             2.821429 
+
+[1] "author_ethnicity"
+
+	Welch Two Sample t-test
+
+data:  as.numeric(x) by temp[["author_gender"]]
+t = -0.63056, df = 115.69, p-value = 0.5296
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.3363483  0.1739059
+sample estimates:
+mean in group female   mean in group male 
+            3.758065             3.839286 
+
+[1] "author_attractive"
+
+	Welch Two Sample t-test
+
+data:  as.numeric(x) by temp[["author_gender"]]
+t = -1.2206, df = 55.183, p-value = 0.2274
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.4536224  0.1101881
+sample estimates:
+mean in group female   mean in group male 
+            2.888889             3.060606 
+
+[1] "would_you_reply"
+
+	Welch Two Sample t-test
+
+data:  as.numeric(x) by temp[["author_gender"]]
+t = -0.0036998, df = 58.57, p-value = 0.9971
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.5903366  0.5881579
+sample estimates:
+mean in group female   mean in group male 
+            3.851852             3.852941 
+
+
+working on Single letter 
+[1] "author_gender"
+<simpleError in t.test.default(x = c(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1), y = c(2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2)): data are essentially constant>
+[1] "author_orient"
+<simpleError in t.test.default(x = c(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1), y = c(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)): data are essentially constant>
+[1] "author_audience"
+<simpleError in t.test.default(x = c(2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2), y = c(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)): data are essentially constant>
+[1] "cat"
+<simpleError in t.test.default(x = c(4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4), y = c(2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2)): data are essentially constant>
+[1] "author_assertive"
+
+	Welch Two Sample t-test
+
+data:  as.numeric(x) by temp[["author_gender"]]
+t = 0.99565, df = 47.918, p-value = 0.3244
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.1975384  0.5850589
+sample estimates:
+mean in group female   mean in group male 
+            2.952381             2.758621 
+
+[1] "author_education"
+
+	Welch Two Sample t-test
+
+data:  as.numeric(x) by temp[["author_gender"]]
+t = 0.19334, df = 47.529, p-value = 0.8475
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.2778895  0.3370028
+sample estimates:
+mean in group female   mean in group male 
+            2.857143             2.827586 
+
+[1] "author_friendly"
+
+	Welch Two Sample t-test
+
+data:  as.numeric(x) by temp[["author_gender"]]
+t = -2.7267, df = 41.022, p-value = 0.009367
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.7374091 -0.1098815
+sample estimates:
+mean in group female   mean in group male 
+            1.714286             2.137931 
+
+[1] "author_sensitive"
+
+	Welch Two Sample t-test
+
+data:  as.numeric(x) by temp[["author_gender"]]
+t = -1.8718, df = 44.081, p-value = 0.06788
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.67517274  0.02492644
+sample estimates:
+mean in group female   mean in group male 
+            2.571429             2.896552 
+
+[1] "author_ethnicity"
+
+	Welch Two Sample t-test
+
+data:  as.numeric(x) by temp[["author_gender"]]
+t = 1.1651, df = 47.125, p-value = 0.2498
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.2123569  0.7969218
+sample estimates:
+mean in group female   mean in group male 
+            3.809524             3.517241 
+
+[1] "author_attractive"
+
+	Welch Two Sample t-test
+
+data:  as.numeric(x) by temp[["author_gender"]]
+t = -0.47029, df = 38.33, p-value = 0.6408
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.3657507  0.2278197
+sample estimates:
+mean in group female   mean in group male 
+            3.000000             3.068966 
+
+[1] "would_you_reply"
+
+	Welch Two Sample t-test
+
+data:  as.numeric(x) by temp[["author_gender"]]
+t = 0.78026, df = 40.826, p-value = 0.4397
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.289553  0.654085
+sample estimates:
+mean in group female   mean in group male 
+            4.285714             4.103448 
+
