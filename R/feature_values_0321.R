@@ -71,24 +71,25 @@ participantfeaturesnumeric=c(
 fullspread=spreadsheetbuilder(files)
 
 
+
 #are features emoticon, prosody, perceived as attractive by target population?
 
 for (st in levels(fullspread[['stimulus']])){
 	temp= fullspread[fullspread[['stimulus']] == st,]
+	#temp= temp[,perceptionfeatures]
 	cat ("\nworking on", st, "\n")
 	#print(colnames(temp))
 	gendered= split(temp, temp[['author_gender']])
-	print (colnames(gendered$female))
 	female= gendered$female[,perceptionfeatures]
-	womenmeans= lapply(female, function(x) names(female)[sapply(female, function(i) identical(i, x))])
-	womenmeans= lapply(female, function(x) mean(as.numeric(x), na.rm= TRUE))
 	male= gendered$male[,perceptionfeatures]
+	womenmeans= lapply(female, function(x) mean(as.numeric(x), na.rm= TRUE))
 	menmeans= lapply(male, function(x) mean(as.numeric(x), na.rm= TRUE))
 	total= rbind(womenmeans, menmeans)
-	print total
-	total = Map(c, womenmeans, menmeans)
-	print total
-	}
-
+	#for i in temp:
+	#	t.test(i[male], i[female])
+	#iterate over cols in i
+	lapply(temp[,perceptionfeatures], function(x) print(names(temp)[sapply(temp, function(i) identical(i,x))]))
+	lapply(temp[,perceptionfeatures], function(x) {print(names(temp)[sapply(temp, function(i) identical(i,x))]);tryCatch(print(t.test (as.numeric(x) ~ temp[['author_gender']])), error=function(e) print(e))})
+}
 #are features rated the same on education, etc, no matter what the gender score?
 
