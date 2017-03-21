@@ -75,11 +75,14 @@ womenonly= fullspread[fullspread[['author_gender']] == 'female'&fullspread[['aut
 gaymenonly= fullspread[fullspread[['author_gender']] == 'male'&fullspread[['author_orient']] == 'homosexual'&fullspread[['author_audience']] == 'man',]
 gaywomenonly= fullspread[fullspread[['author_gender']] == 'female'&fullspread[['author_orient']] == 'homosexual'&fullspread[['author_audience']] == 'woman',]
 
-fullspread=rbind(menonly, womenonly)
+#fullspread=rbind(menonly, womenonly)
 
 
 #are features emoticon, prosody, perceived as attractive by target population?
-#sink("feature_values_0321.txt")
+
+##interaction gender-rating - attribute-rating?
+#are features rated the same on education, etc, no matter what the gender score?
+sink("feature_values_means_0321.txt")
 for (st in levels(fullspread[['stimulus']])){
 	temp= fullspread[fullspread[['stimulus']] == st,]
 	#temp= temp[,perceptionfeatures]
@@ -92,9 +95,16 @@ for (st in levels(fullspread[['stimulus']])){
 	total= rbind(womenmeans, menmeans)
 
 	#lapply(temp[,perceptionfeatures], function(x) print(names(temp)[sapply(temp, function(i) identical(i,x))]))
-	print (total)
-	lapply(temp[,perceptionfeatures], function(x) {print(names(temp)[sapply(temp, function(i) identical(i,x))]);tryCatch(print(t.test (as.numeric(x) ~ temp[['author_gender']])), error=function(e) print(e))})
+	write.csv (total)
+	#lapply(temp[,perceptionfeatures], function(x) {print(names(temp)[sapply(temp, function(i) identical(i,x))]);tryCatch(print(t.test (as.numeric(x) ~ temp[['author_gender']])), error=function(e) print(e))})
 }
-#sink()
-#are features rated the same on education, etc, no matter what the gender score?
+sink()
 
+#do regression
+sink("gndrregression_0322.txt")
+for (p in perceptionfeatures){
+	modi= glm(as.numeric(fullspread[[p]])~fullspread[['author_gender']])
+	cat ("\n+++working on\n",p)
+	print (aov(modi))
+}
+sink()
