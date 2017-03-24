@@ -93,11 +93,30 @@ print(t.test(as.numeric(ugly$author_attractive),as.numeric(beauty$author_attract
 cat ("\nwyr mean for male participants, ugly features", mean(as.numeric(ugly$would_you_reply), na.rm=TRUE))
 cat ("\nwyr mean for male participants,  beauty features", mean(as.numeric(beauty$would_you_reply), na.rm=TRUE))
 
-
+##WOMEN
+##WOMEN
+ugly=females[(females[['stimulus']] != "Emoticons")&(females[['stimulus']] != "Prosody"),]
+beauty= females[(females[['stimulus']] == "Prosody")|(females[['stimulus']] == "Emoticons"),]
+cat ("\nmean for female participants, ugly features", mean(as.numeric(ugly$author_attractive), na.rm=TRUE))
+cat ("\nmean for female participants,  beauty features", mean(as.numeric(beauty$author_attractive), na.rm=TRUE))
+print(t.test(as.numeric(ugly$author_attractive),as.numeric(beauty$author_attractive)))
+cat ("\nwyr mean for female participants, ugly features", mean(as.numeric(ugly$would_you_reply), na.rm=TRUE))
+cat ("\nwyr mean for female participants,  beauty features", mean(as.numeric(beauty$would_you_reply), na.rm=TRUE))
 
 #mean for emoticon + prosody versus rest
-
 
 #mean for stimulus emoticon compared to rest
 
 #mean for stimulus prosody comp to rest
+
+##Lets see if women get higher scores if prosody
+femauthor= fullspread[fullspread[['author_gender']] == "female",]
+#ugly
+ugly= femauthor [(femauthor[['stimulus']]!='Emoticons')&(femauthor[['stimulus']]!='Prosody'),]
+#beauty
+beauty= femauthor [(femauthor[['stimulus']]=='Emoticons')|(femauthor[['stimulus']]=='Prosody'),]
+cat ("mean ugly", mean(as.numeric(ugly$author_attractive), na.rm=TRUE))
+cat("mean beauty", mean(as.numeric(beauty$author_attractive), na.rm=TRUE))
+print(t.test(as.numeric(ugly$author_attractive),as.numeric(beauty$author_attractive)))
+
+
